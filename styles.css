@@ -34,11 +34,78 @@ p, li, a, span {
   font-family: 'Lato', sans-serif;
 }
 
+li {
+  list-style: none;
+}
 /* reset and variables */
 
 body {
   max-width: 100%;
   min-height: 100vh;
   background-color: var(--almost-white);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+header {
+  width: 100%;
+  height: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #c2c2c2;
+}
+
+div.logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+nav {
+  padding: .5rem 0;
+  border-radius: 8px;
+  border: 1px solid var(--accent);
+}
+
+ul.navbar-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+li.item {
+  margin: 0 1.5rem;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: background .3s ease;
+}
+li.item:hover {
+  background-color: var(--accent);
+  color: #fff;
+}
+
+button.login {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  width: 120px;
+  padding: 1rem;
+  border: 1px solid #000;
+  outline: none;
+  color: #fff;
+  background-color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+button.login:hover {
+  background-color: transparent;
+  color: #000;
+}
