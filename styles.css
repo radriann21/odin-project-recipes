@@ -1,0 +1,44 @@
+/* reset and variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Poppins', sans-serif;
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato', sans-serif;
+  src: url('./assets/fonts/Lato-Regular.ttf');
+}
+
+:root {
+  --primary-green: #6f9580;
+  --secondary-green: #a3c2b1;
+  --accent: #81b498;
+  --almost-white: #fafbfa;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p, li, a, span {
+  font-family: 'Lato', sans-serif;
+}
+
+/* reset and variables */
+
+body {
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: var(--almost-white);
+}
+
