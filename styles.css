@@ -37,6 +37,7 @@ p, li, a, span {
 li {
   list-style: none;
 }
+
 /* reset and variables */
 
 body {
@@ -48,6 +49,8 @@ body {
   flex-direction: column;
 }
 
+
+/* header styles */
 header {
   width: 100%;
   height: 100%;
@@ -108,4 +111,85 @@ button.login {
 button.login:hover {
   background-color: transparent;
   color: #000;
+}
+/* header styles */
+
+/* main styles */
+main {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+div.title-container {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1.title {
+  font-size: 3rem;
+}
+
+p.title-text {
+  margin-top: 2rem;
+  line-height: 1.6;
+  width: 60%;
+  text-align: left;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+div.section {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+
+article.card {
+  width: 30%;
+  padding: .5rem;
+  border-radius: 8px;
+  border: 2px solid var(--primary-green);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+section.card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  p {
+    line-height: 1.6;
+    font-size: 14px;
+  }
+}
+
+button {
+  padding: 1rem;
+  border: 2px solid var(--accent);
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
